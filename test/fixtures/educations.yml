@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  school_name: MyString
+  degree: MyString
+  university: MyString
+  filed_of_study: MyString
+  date_from: 2014-06-13
+  date_to: 2014-06-13
+  grade: MyString
+  description: MyString
+  user: 
+
+two:
+  school_name: MyString
+  degree: MyString
+  university: MyString
+  filed_of_study: MyString
+  date_from: 2014-06-13
+  date_to: 2014-06-13
+  grade: MyString
+  description: MyString
+  user: 

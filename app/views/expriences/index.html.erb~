@@ -1,0 +1,39 @@
+<h1>Listing expriences</h1>
+
+<table>
+  <tr>
+    <th>Compnay name</th>
+    <th>Designation</th>
+    <th>Location</th>
+    <th>Time from</th>
+    <th>Time to</th>
+    <th>Currently working</th>
+    <th>Link</th>
+    <th>Upload file</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @expriences.each do |exprience| %>
+  <tr>
+    <td><%= exprience.compnay_name %></td>
+    <td><%= exprience.designation %></td>
+    <td><%= exprience.location %></td>
+    <td><%= exprience.time_from %></td>
+    <td><%= exprience.time_to %></td>
+    <td><%= exprience.currently_working %></td>
+    <td><%= exprience.link %></td>
+    <td><%= exprience.upload_file %></td>
+    <td><%= exprience.user %></td>
+    <td><%= link_to 'Show', exprience %></td>
+    <td><%= link_to 'Edit', edit_exprience_path(exprience) %></td>
+    <td><%= link_to 'Destroy', exprience, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Exprience', new_exprience_path %>

@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Compnay name:</b>
+  <%= @exprience.compnay_name %>
+</p>
+
+<p>
+  <b>Designation:</b>
+  <%= @exprience.designation %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @exprience.location %>
+</p>
+
+<p>
+  <b>Time from:</b>
+  <%= @exprience.time_from %>
+</p>
+
+<p>
+  <b>Time to:</b>
+  <%= @exprience.time_to %>
+</p>
+
+<p>
+  <b>Currently working:</b>
+  <%= @exprience.currently_working %>
+</p>
+
+<p>
+  <b>Link:</b>
+  <%= @exprience.link %>
+</p>
+
+<p>
+  <b>Upload file:</b>
+  <%= @exprience.upload_file %>
+</p>
+
+
+
+
+<%= link_to 'Edit', edit_exprience_path(@exprience) %> |
+<%= link_to 'Back', expriences_path %>

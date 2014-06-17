@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @certification.name %>
+</p>
+
+<p>
+  <b>Authority:</b>
+  <%= @certification.authority %>
+</p>
+
+<p>
+  <b>License number:</b>
+  <%= @certification.license_number %>
+</p>
+
+<p>
+  <b>Certification link:</b>
+  <%= @certification.certification_link %>
+</p>
+
+<p>
+  <b>Date from:</b>
+  <%= @certification.date_from %>
+</p>
+
+<p>
+  <b>Date to:</b>
+  <%= @certification.date_to %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @certification.user %>
+</p>
+
+
+<%= link_to 'Edit', edit_certification_path(@certification) %> |
+<%= link_to 'Back', certifications_path %>

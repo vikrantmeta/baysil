@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  compnay_name: MyString
+  designation: MyString
+  location: MyString
+  time_from: 2014-06-13
+  time_to: 2014-06-13
+  currently_working: false
+  link: MyString
+  upload_file: MyString
+  user: 
+
+two:
+  compnay_name: MyString
+  designation: MyString
+  location: MyString
+  time_from: 2014-06-13
+  time_to: 2014-06-13
+  currently_working: false
+  link: MyString
+  upload_file: MyString
+  user: 

@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @language.name %>
+</p>
+
+<p>
+  <b>Proficincy:</b>
+  <%= @language.proficincy %>
+</p>
+
+<%=debug(User.find_by_id(current_user.id).language)%>
+<%=debug(User.find_by_id(current_user.id).project)%>
+
+
+<%= link_to 'Edit', edit_language_path(@language) %> |
+<%= link_to 'Back', languages_path %>

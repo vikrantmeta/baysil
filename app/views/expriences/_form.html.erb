@@ -1,0 +1,50 @@
+<%= form_for(@exprience) do |f| %>
+  <% if @exprience.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@exprience.errors.count, "error") %> prohibited this exprience from being saved:</h2>
+
+      <ul>
+      <% @exprience.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :compnay_name %><br />
+    <%= f.text_field :compnay_name %>
+  </div>
+  <div class="field">
+    <%= f.label :designation %><br />
+    <%= f.text_field :designation %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :time_from %><br />
+    <%= f.date_select :time_from %>
+  </div>
+  <div class="field">
+    <%= f.label :time_to %><br />
+    <%= f.date_select :time_to %>
+  </div>
+  <div class="field">
+    <%= f.label :currently_working %><br />
+    <%= f.check_box :currently_working %>
+  </div>
+  <div class="field">
+    <%= f.label :link %><br />
+    <%= f.text_field :link %>
+  </div>
+  <div class="field">
+    <%= f.label :upload_file %><br />
+    <%= f.text_field :upload_file %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

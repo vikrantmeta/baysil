@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  authority: MyString
+  license_number: MyString
+  certification_link: MyString
+  date_from: 2014-06-13
+  date_to: 2014-06-13
+  user: 
+
+two:
+  name: MyString
+  authority: MyString
+  license_number: MyString
+  certification_link: MyString
+  date_from: 2014-06-13
+  date_to: 2014-06-13
+  user: 

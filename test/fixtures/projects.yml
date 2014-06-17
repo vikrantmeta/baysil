@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  occupation: MyString
+  date_from: 2014-06-13
+  date_to: 2014-06-13
+  team_size: 1
+  user: 
+
+two:
+  name: MyString
+  occupation: MyString
+  date_from: 2014-06-13
+  date_to: 2014-06-13
+  team_size: 1
+  user: 

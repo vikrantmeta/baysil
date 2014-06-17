@@ -1,0 +1,45 @@
+<%= form_for(@certification) do |f| %>
+  <% if @certification.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@certification.errors.count, "error") %> prohibited this certification from being saved:</h2>
+
+      <ul>
+      <% @certification.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :authority %><br />
+    <%= f.text_field :authority %>
+  </div>
+  <div class="field">
+    <%= f.label :license_number %><br />
+    <%= f.text_field :license_number %>
+  </div>
+  <div class="field">
+    <%= f.label :certification_link %><br />
+    <%= f.text_field :certification_link %>
+  </div>
+  <div class="field">
+    <%= f.label :date_from %><br />
+    <%= f.date_select :date_from %>
+  </div>
+  <div class="field">
+    <%= f.label :date_to %><br />
+    <%= f.date_select :date_to %>
+  </div>
+  <div class="field">
+    <%= f.label :user %><br />
+    <%= f.text_field :user %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
